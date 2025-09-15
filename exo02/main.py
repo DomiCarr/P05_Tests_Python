@@ -17,5 +17,12 @@ students = {
 }
 
 
-name = input("Entrez le nom de l'étudiant : ")
-print(f"Je m'appelle {name} ")
+student_name = input("Entrez le nom de l'étudiant : ")
+print(f"Etudiant: {student_name}: ")
+
+if student_name in students:
+    print(f"Notes de {student_name}: ")
+    for note, valeur in students[student_name].items():
+        print(f" {note} : {valeur}")
+else:
+    print(f"L'étudiant {student_name} n'existe pas dans la liste.")
