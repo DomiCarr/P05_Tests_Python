@@ -15,3 +15,7 @@ students = {
          'Histoire': 78
      }
 }
+
+
+name = input("Entrez le nom de l'étudiant : ")
+print(f"Je m'appelle {name} ")
